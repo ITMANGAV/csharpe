@@ -9,6 +9,6 @@ if (bak == 0)
 }
 else
 {
-    Console.WriteLine(num1 + "," + num2 + " -> " + "некратно, остаток" + bak);
+    Console.WriteLine(num1 + "," + num2 + " -> " + "некратно, остаток " + bak);
 }
 
