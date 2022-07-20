@@ -15,18 +15,18 @@ else
     int digit = n1 * 1000 + n2 * 100 + n4 * 10 + n5;
     //Console.WriteLine($"{n1} {n2} {n3} {n4} {n5}");
     //Console.WriteLine(digit);
-    var polindrom = new Dictionary<int, int>();
+    var palindrom = new Dictionary<int, int>();
 
     for (int i = 1; i < 10; i++)
     {
         for (int j = 1; j < 10; j++)
         {
-            polindrom.Add(i * 1000 + j * 100 + j * 10 + i, 1);
+            palindrom.Add(i * 1000 + j * 100 + j * 10 + i, 1);
 
         }
     }
 
-    if (polindrom.ContainsKey(digit))
+    if (palindrom.ContainsKey(digit))
     {
         Console.Write("Введённое число палиндром!");
     }
