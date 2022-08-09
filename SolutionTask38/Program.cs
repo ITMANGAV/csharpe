@@ -1,4 +1,5 @@
-﻿double[] CreateArray()
+﻿// Метод создает массив вещественных чисел
+double[] CreateArray()
 {
     Console.Write("Введите число, размер массива: ");
     string? number = Console.ReadLine();
@@ -11,7 +12,7 @@
     }
     return arr;
 }
-
+// Метод распечатывает массив
 void PrintArr(double[] arr1)
 {
     for (int i = 0; i < arr1.Length; i++)
@@ -19,7 +20,7 @@ void PrintArr(double[] arr1)
         Console.Write("{0,6:F3} ", arr1[i]);
     }
 }
-
+// Метод сортирует массив вставками
 double[] InsertionSort(double[] array)
 {
     double[] result = new double[array.Length];
